@@ -1,4 +1,4 @@
 # OtakuGifs Wrapper
-## Written by Spencer#0003
+NOTE: I am NOT affiliated with OtakuGifs in anyway.
 
-Will be updated in the future.
+This is a simple wrapper for the OtakuGifs API, you need a valid API key for this to work.
