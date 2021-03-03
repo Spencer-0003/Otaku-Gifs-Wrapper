@@ -6,6 +6,7 @@ export class OtakuGifs {
     key: string; // API key.
 
     constructor(apiKey: string) {
+        if (!apiKey) throw new Error("[OtakuGifs]: API key missing");
         this.key = apiKey;
     };
 
