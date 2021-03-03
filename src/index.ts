@@ -2,7 +2,7 @@ import superagent from "superagent";
 
 const BASE_URL = "https://api.otakugifs.xyz/gif/";
 
-export default class {
+export class gifs {
     key: string; // API key.
 
     constructor(apiKey: string) {
