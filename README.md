@@ -18,7 +18,7 @@ Usage:
 const { gifs } = require("otakugifs-wrapper");
 const gifHandler = new gifs("Your api key here");
 
-const smile = () => {
-    return gifHandler.smile(); // Returns a URL.
+const smile = async () => {
+    return await gifHandler.smile(); // Returns a URL.
 };
 ```
