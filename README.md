@@ -10,7 +10,7 @@ Syntax:
 ```javascript
 const { gifs } = require("otakugifs-wrapper");
 const gifHandler = new gifs("Your api key here");
-gifHandler.gif_name_here()
+gifHandler.gif_name_here();
 ```
 
 Usage:
@@ -19,6 +19,6 @@ const { gifs } = require("otakugifs-wrapper");
 const gifHandler = new gifs("Your api key here");
 
 const smile = () => {
-    return gifHandler.smile() // Returns a URL.
+    return gifHandler.smile(); // Returns a URL.
 };
 ```
