@@ -10,6 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/Spencer-0003/Otaku-Gifs-Wrapper.git"
   },
+  "keywords": [
+    "otaku",
+    "gifs",
+    "otakugifs",
+    "wrapper"
+  ],
   "author": "Spencer-0003",
   "license": "ISC",
   "bugs": {
