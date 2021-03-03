@@ -20,7 +20,7 @@ const accountHandler = new account("Your api key here");
 const gifHandler = new gifs("Your api key here");
 
 const resetKey = async () => {
-    return await accountHandler.reset_key();
+    return await accountHandler.reset_key(); // Returns new API key.
 };
 
 const smile = async () => {
