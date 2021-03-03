@@ -1,6 +1,6 @@
 {
   "name": "otakugifs-wrapper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple wrapper for the OtakuGifs API.",
   "main": "dist/index.js",
   "scripts": {
