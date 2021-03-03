@@ -1,3 +1,8 @@
+/*
+    Otaku Gifs API Wrapper
+    Written by Spencer-0003
+*/
+
 import superagent from "superagent";
 
 const BASE_URL = "https://api.otakugifs.xyz/gif/";
