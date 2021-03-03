@@ -7,12 +7,41 @@ import superagent from "superagent";
 
 const BASE_URL = "https://api.otakugifs.xyz/gif/";
 
+// Accounts
+
+export class account {
+    key: string; // API key.
+
+    constructor(apiKey: string) {
+        if (!apiKey) throw new Error("[OtakuGifs]: API key missing");
+        this.key = apiKey;
+    };
+
+    async reset_key() {
+        let { body } = await superagent
+        .get("https://api.otakugifs.xyz/apikey/reset")
+        .set("X-API-KEY", this.key);
+
+        return body.newApiKey;
+    };
+};
+
+// Gifs
+
 export class gifs {
     key: string; // API key.
 
     constructor(apiKey: string) {
         if (!apiKey) throw new Error("[OtakuGifs]: API key missing");
         this.key = apiKey;
+    };
+
+    async all() {
+        let { body } = await superagent
+        .get("https://api.otakugifs.xyz/gif/allreactions")
+        .set("X-API-KEY", this.key);
+
+        return body.reactions;
     };
 
     async angrystare() {
