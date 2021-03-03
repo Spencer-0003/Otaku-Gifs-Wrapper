@@ -15,8 +15,13 @@ gifHandler.gif_name_here();
 
 Usage:
 ```javascript
-const { gifs } = require("otakugifs-wrapper");
+const { account, gifs } = require("otakugifs-wrapper");
+const accountHandler = new account("Your api key here");
 const gifHandler = new gifs("Your api key here");
+
+const resetKey = async () => {
+    return await accountHandler.reset_key();
+};
 
 const smile = async () => {
     return await gifHandler.smile(); // Returns a URL.
